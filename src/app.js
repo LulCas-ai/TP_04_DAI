@@ -20,7 +20,8 @@ app.get('/fecha-completa', (req, res) => {
 });
 
 app.use((req, res, next) => {
-  res.status(404).send("esto no funciona angi-ene de portriene");
+    res.status(404).redirect("https://http.cat/images/404.jpg")
+  //res.status(404).send("esto no funciona angi-ene de portriene");
 });
 
 app.listen(PORT, () => {
